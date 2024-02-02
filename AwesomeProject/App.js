@@ -4,5 +4,5 @@ import WelcomeScreen from "./app/screens/WelcomeScreen";
 import HomePage from "./app/screens/HomePage";
 
 export default function App() {
-  return <WelcomeScreen />;
+  return <HomePage />;
 }
