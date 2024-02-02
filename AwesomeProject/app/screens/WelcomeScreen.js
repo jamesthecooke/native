@@ -3,26 +3,11 @@ import { View, Text, Button, StyleSheet } from "react-native";
 
 function WelcomeScreen(props) {
   return (
-    <View style={{ flex: 1 }}>
-      <View style={{ backgroundColor: "blue", flex: 3 }} />
+    <View style={styles.container}>
+      <View style={styles.imgPlaceholder} />
 
-      <View
-        style={{
-          backgroundColor: "white",
-          flex: 0.5,
-          flexDirection: "row",
-          justifyContent: "space-around",
-          alignItems: "center",
-        }}
-      >
-        <View
-          style={{
-            backgroundColor: "red",
-            width: 150,
-            height: 50,
-            borderRadius: 100,
-          }}
-        >
+      <View style={styles.btnContainer}>
+        <View style={styles.btn}>
           <Button
             title="first btn"
             color="black"
@@ -30,18 +15,10 @@ function WelcomeScreen(props) {
           />
         </View>
 
-        <View
-          style={{
-            backgroundColor: "red",
-            width: 150,
-            height: 50,
-            borderRadius: 100,
-          }}
-        >
+        <View style={styles.btn}>
           <Button
             title="second btn"
             color="black"
-            borderRadius="100"
             onPress={() => alert("Second btn press")}
           />
         </View>
@@ -50,6 +27,27 @@ function WelcomeScreen(props) {
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  imgPlaceholder: {
+    flex: 3,
+    backgroundColor: "blue",
+  },
+  btnContainer: {
+    flex: 0.5,
+    backgroundColor: "white",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+  },
+  btn: {
+    backgroundColor: "red",
+    width: 150,
+    height: 50,
+    borderRadius: 100,
+  },
+});
 
 export default WelcomeScreen;
