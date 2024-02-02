@@ -1,11 +1,21 @@
 import React from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
-
-function WelcomeScreen(props) {
+import { StyleSheet } from "react-native";
+import { ImageBackground } from "react-native";
+import { View, Button, Image, Text } from "react-native";
+import { useNavigation } from "react-native";
+function WelcomeScreen() {
   return (
-    <View style={styles.container}>
-      <View style={styles.imgPlaceholder} />
-
+    <ImageBackground
+      source={require("../assets/background.jpg")}
+      style={styles.background}
+    >
+      <View style={styles.logoContainer}>
+        <Image
+          style={styles.logo}
+          source={require("../assets/favicon.png")}
+        ></Image>
+        <Text style={styles.logoText}>This is my awsome new app</Text>
+      </View>
       <View style={styles.btnContainer}>
         <View style={styles.btn}>
           <Button
@@ -19,35 +29,49 @@ function WelcomeScreen(props) {
           <Button
             title="second btn"
             color="black"
-            onPress={() => alert("Second btn press")}
+            onPress={() => alert("First btn press")}
           />
         </View>
       </View>
-    </View>
+    </ImageBackground>
   );
 }
 
+export default WelcomeScreen;
+
 const styles = StyleSheet.create({
-  container: {
+  background: {
     flex: 1,
-  },
-  imgPlaceholder: {
-    flex: 3,
-    backgroundColor: "blue",
+    justifyContent: "flex-end",
+    alignItems: "center",
   },
   btnContainer: {
-    flex: 0.5,
-    backgroundColor: "white",
+    flex: 0.2,
+    backgroundColor: "black",
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
+    width: "100%",
+    opacity: 0.5,
+    borderRadius: 50,
   },
   btn: {
-    backgroundColor: "red",
+    backgroundColor: "white",
     width: 150,
     height: 50,
     borderRadius: 100,
   },
+  logo: {
+    width: 100,
+    height: 100,
+  },
+  logoText: {
+    color: "white",
+    fontSize: 20,
+  },
+  logoContainer: {
+    position: "absolute",
+    top: 70,
+    alignItems: "center",
+  },
 });
-
-export default WelcomeScreen;
