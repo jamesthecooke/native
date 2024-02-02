@@ -8,6 +8,7 @@ function HomePage(props) {
       source={require("../assets/background.jpg")}
       style={styles.background}
     >
+      <View style={styles.menuIcon}></View>
       <View style={styles.headingContainer}>
         <Text style={styles.pageHeading}>
           Welcome to my first React App where I will demonstrate some of the
@@ -24,18 +25,33 @@ const styles = StyleSheet.create({
   background: {
     flex: 1,
     justifyContent: "flex",
-    alignItems: "center",
   },
 
   headingContainer: {
     position: "absolute",
-    top: 70,
+    top: "50%",
     alignItems: "center",
-    width: "80%",
+    flexDirection: "row",
+    // width: "80%",
+    backgroundColor: "black",
+    opacity: 0.7,
+    borderRadius: 15,
+    left: "3%",
   },
 
   pageHeading: {
-    fontSize: 15,
+    fontSize: 20,
     color: "white",
+    fontWeight: "bold",
+  },
+
+  menuIcon: {
+    width: 50,
+    height: 50,
+    backgroundColor: "black",
+    top: 50,
+    left: 10,
+    borderRadius: 10,
+    backgroundColor: "white",
   },
 });
