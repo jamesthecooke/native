@@ -8,7 +8,6 @@ function HomePage(props) {
       source={require("../assets/background.jpg")}
       style={styles.background}
     >
-      <View style={styles.menuIcon}></View>
       <View style={styles.headingContainer}>
         <Text style={styles.pageHeading}>
           Welcome to my first React App where I will demonstrate some of the
@@ -43,15 +42,5 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: "white",
     fontWeight: "bold",
-  },
-
-  menuIcon: {
-    width: 50,
-    height: 50,
-    backgroundColor: "black",
-    top: 50,
-    left: 10,
-    borderRadius: 10,
-    backgroundColor: "white",
   },
 });

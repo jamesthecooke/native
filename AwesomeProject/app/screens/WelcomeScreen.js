@@ -3,7 +3,11 @@ import { StyleSheet } from "react-native";
 import { ImageBackground } from "react-native";
 import { View, Button, Image, Text } from "react-native";
 import { useNavigation } from "react-native";
-function WelcomeScreen() {
+function WelcomeScreen({ navigation }) {
+  const pressHandler = () => {
+    navigation.navigate("HomePage");
+  };
+
   return (
     <ImageBackground
       source={require("../assets/background.jpg")}
@@ -26,11 +30,7 @@ function WelcomeScreen() {
         </View>
 
         <View style={styles.btn}>
-          <Button
-            title="second btn"
-            color="black"
-            onPress={() => alert("First btn press")}
-          />
+          <Button title="second btn" color="black" onPress={pressHandler} />
         </View>
       </View>
     </ImageBackground>
