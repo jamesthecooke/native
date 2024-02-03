@@ -5,7 +5,8 @@ import { View, Button, Image, Text } from "react-native";
 import { useNavigation } from "react-native";
 function WelcomeScreen({ navigation }) {
   const pressHandler = () => {
-    navigation.navigate("HomePage");
+    // navigation.navigate("HomePage");
+    navigation.push("HomePage");
   };
 
   return (
