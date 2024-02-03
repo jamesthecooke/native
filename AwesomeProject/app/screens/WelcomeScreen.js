@@ -3,8 +3,13 @@ import { StyleSheet } from "react-native";
 import { ImageBackground } from "react-native";
 import { View, Button, Image, Text } from "react-native";
 import { useNavigation } from "react-native";
+import HomePage from "./MyProjects";
 function WelcomeScreen({ navigation }) {
-  const pressHandler = () => {
+  const MyProjects = () => {
+    navigation.push("MyProjects");
+  };
+
+  const HomePage = () => {
     // navigation.navigate("HomePage");
     navigation.push("HomePage");
   };
@@ -23,15 +28,11 @@ function WelcomeScreen({ navigation }) {
       </View>
       <View style={styles.btnContainer}>
         <View style={styles.btn}>
-          <Button
-            title="first btn"
-            color="black"
-            onPress={() => alert("First btn press")}
-          />
+          <Button title="first btn" color="black" onPress={MyProjects} />
         </View>
 
         <View style={styles.btn}>
-          <Button title="second btn" color="black" onPress={pressHandler} />
+          <Button title="second btn" color="black" onPress={HomePage} />
         </View>
       </View>
     </ImageBackground>

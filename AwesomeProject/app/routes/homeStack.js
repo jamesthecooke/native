@@ -2,6 +2,7 @@ import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
 import WelcomeScreen from "../screens/WelcomeScreen";
 import HomePage from "../screens/HomePage";
+import MyProjects from "../screens/MyProjects";
 
 const screens = {
   Home: {
@@ -9,6 +10,9 @@ const screens = {
   },
   HomePage: {
     screen: HomePage,
+  },
+  MyProjects: {
+    screen: MyProjects,
   },
 };
 
