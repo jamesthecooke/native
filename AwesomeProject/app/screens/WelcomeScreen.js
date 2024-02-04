@@ -28,11 +28,11 @@ function WelcomeScreen({ navigation }) {
       </View>
       <View style={styles.btnContainer}>
         <View style={styles.btn}>
-          <Button title="first btn" color="black" onPress={MyProjects} />
+          <Button title="My Projects" color="black" onPress={MyProjects} />
         </View>
 
         <View style={styles.btn}>
-          <Button title="second btn" color="black" onPress={HomePage} />
+          <Button title="About this App" color="black" onPress={HomePage} />
         </View>
       </View>
     </ImageBackground>
@@ -49,13 +49,10 @@ const styles = StyleSheet.create({
   },
   btnContainer: {
     flex: 0.2,
-    backgroundColor: "black",
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
     width: "100%",
-    opacity: 0.5,
-    borderRadius: 50,
   },
   btn: {
     backgroundColor: "white",
