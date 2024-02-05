@@ -32,7 +32,7 @@ function WelcomeScreen({ navigation }) {
         </View>
 
         <View style={styles.btn}>
-          <Button title="About this App" color="black" onPress={HomePage} />
+          <Button title="About Me" color="black" onPress={HomePage} />
         </View>
       </View>
     </ImageBackground>
@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
     width: 150,
     height: 50,
     borderRadius: 100,
+    justifyContent: "center",
   },
   logo: {
     width: 100,
