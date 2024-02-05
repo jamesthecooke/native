@@ -3,6 +3,7 @@ import { createAppContainer } from "react-navigation";
 import WelcomeScreen from "../screens/WelcomeScreen";
 import HomePage from "../screens/HomePage";
 import MyProjects from "../screens/MyProjects";
+import HarvestHub from "../screens/HarvestHub";
 
 const screens = {
   Home: {
@@ -13,6 +14,9 @@ const screens = {
   },
   MyProjects: {
     screen: MyProjects,
+  },
+  HarvestHub: {
+    screen: HarvestHub,
   },
 };
 

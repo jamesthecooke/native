@@ -1,8 +1,18 @@
 import React from "react";
-import { ImageBackground, ScrollView, StyleSheet, View } from "react-native";
+import {
+  Button,
+  ImageBackground,
+  ScrollView,
+  StyleSheet,
+  View,
+} from "react-native";
 import { Text } from "react-native";
 
-function HomePage(props) {
+function HomePage({ navigation }) {
+  const HarvestHub = () => {
+    navigation.push("HarvestHub");
+  };
+
   return (
     <ImageBackground
       source={require("../assets/background.jpg")}
@@ -21,7 +31,7 @@ function HomePage(props) {
             style={styles.projectImg}
           ></ImageBackground>
           <View style={styles.project}>
-            <Text stle={styles.projectText}>Project 1</Text>
+            <Button title="Project 1" color="black" onPress={HarvestHub} />
           </View>
         </View>
 
