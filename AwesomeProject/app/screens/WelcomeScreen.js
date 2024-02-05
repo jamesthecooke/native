@@ -67,10 +67,12 @@ const styles = StyleSheet.create({
   logoText: {
     color: "white",
     fontSize: 20,
+    color: "white",
+    fontWeight: "bold",
   },
   logoContainer: {
     position: "absolute",
-    top: 70,
+    top: 35,
     alignItems: "center",
   },
 });

@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageBackground, StyleSheet, View } from "react-native";
+import { ImageBackground, ScrollView, StyleSheet, View } from "react-native";
 import { Text } from "react-native";
 
 function HomePage(props) {
@@ -7,7 +7,14 @@ function HomePage(props) {
     <ImageBackground
       source={require("../assets/background.jpg")}
       style={styles.background}
-    ></ImageBackground>
+    >
+      <ScrollView>
+        <View style={styles.projectContainer} />
+        <View style={styles.projectContainer} />
+        <View style={styles.projectContainer} />
+        <View style={styles.projectContainer} />
+      </ScrollView>
+    </ImageBackground>
   );
 }
 
@@ -16,24 +23,19 @@ export default HomePage;
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    justifyContent: "flex",
   },
 
-  headingContainer: {
-    position: "absolute",
-    top: "50%",
+  scrollViewContent: {
+    paddingTop: 30,
+    paddingBottom: 30,
     alignItems: "center",
-    flexDirection: "row",
-    // width: "80%",
-    backgroundColor: "black",
-    opacity: 0.7,
-    borderRadius: 15,
-    left: "3%",
+    flexGrow: 1,
   },
-
-  pageHeading: {
-    fontSize: 20,
-    color: "white",
-    fontWeight: "bold",
+  projectContainer: {
+    width: "85%",
+    height: 300,
+    borderRadius: 25,
+    backgroundColor: "white",
+    marginBottom: 20,
   },
 });
