@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 
 function HarvestHub(props) {
-  return <Text>hello world</Text>;
+  return <Text>Project here</Text>;
 }
 
 export default HarvestHub;
