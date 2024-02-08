@@ -8,3 +8,4 @@ function HarvestHub(props) {
 export default HarvestHub;
 
 // const styles = StyleSheet.create({});
+// comment added
