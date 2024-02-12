@@ -10,6 +10,13 @@ function HarvestHub(props) {
           style={styles.projectImg}
         ></Image>
       </View>
+      <View style={styles.pageBody}>
+        <Text style={styles.descriptionText}>
+          Harvest Hub my awsome 4 week project that was worked on in a team of
+          6. this is place holder text and will be much mich better formatted
+          than this teheeh
+        </Text>
+      </View>
     </ImageBackground>
   );
 }
@@ -20,7 +27,7 @@ const styles = StyleSheet.create({
   background: {
     flex: 1,
     justifyContent: "flex",
-    backgroundColor: "black",
+    backgroundColor: "white",
   },
 
   projectImgContainer: {
@@ -35,6 +42,21 @@ const styles = StyleSheet.create({
     width: "85%",
     height: "100%",
     borderRadius: 20,
+    marginTop: 20,
+  },
+
+  pageBody: {
+    flex: 0.65,
+    justifyContent: "flex-start",
+    alignItems: "center",
+    marginTop: 20,
+  },
+
+  descriptionText: {
+    fontSize: 20,
+    color: "black",
+    fontWeight: "bold",
+    margin: 20,
   },
 });
 // comment added
