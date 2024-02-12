@@ -1,12 +1,12 @@
 import React from "react";
 import { ImageBackground, Text, StyleSheet, View, Image } from "react-native";
 
-function HarvestHub(props) {
+function Pong(props) {
   return (
     <ImageBackground style={styles.background}>
       <View style={styles.projectImgContainer}>
         <Image
-          source={require("../assets/background.jpg")}
+          source={require("../../assets/background.jpg")}
           style={styles.projectImg}
         ></Image>
       </View>
@@ -21,7 +21,7 @@ function HarvestHub(props) {
   );
 }
 
-export default HarvestHub;
+export default Pong;
 
 const styles = StyleSheet.create({
   background: {

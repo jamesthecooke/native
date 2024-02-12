@@ -7,8 +7,17 @@ import {
   View,
 } from "react-native";
 import { Text } from "react-native";
+import TechTiTens from "./projects/TechTiTens";
 
 function HomePage({ navigation }) {
+  const TechTiTens = () => {
+    navigation.push("TechTiTens");
+  };
+
+  const Pong = () => {
+    navigation.push("Pong");
+  };
+
   const HarvestHub = () => {
     navigation.push("HarvestHub");
   };
@@ -31,7 +40,7 @@ function HomePage({ navigation }) {
             style={styles.projectImg}
           ></ImageBackground>
           <View style={styles.project}>
-            <Button title="Project 1" color="black" onPress={HarvestHub} />
+            <Button title="Harvest Hub" color="black" onPress={HarvestHub} />
           </View>
         </View>
 
@@ -41,7 +50,7 @@ function HomePage({ navigation }) {
             style={styles.projectImg}
           ></ImageBackground>
           <View style={styles.project}>
-            <Text stle={styles.projectText}>Project 2</Text>
+            <Button title="Pong" color="black" onPress={Pong} />
           </View>
         </View>
 
@@ -51,7 +60,7 @@ function HomePage({ navigation }) {
             style={styles.projectImg}
           ></ImageBackground>
           <View style={styles.project}>
-            <Text stle={styles.projectText}>Project 3</Text>
+            <Button title="TechTiTens" color="black" onPress={TechTiTens} />
           </View>
         </View>
 
