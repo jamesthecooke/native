@@ -16,7 +16,7 @@ function WelcomeScreen({ navigation }) {
 
   return (
     <ImageBackground
-      source={require("../assets/background.jpg")}
+      source={require("../assets/Screenshot 2024-02-14 at 16.49.36.png")}
       style={styles.background}
     >
       <View style={styles.logoContainer}>
@@ -24,7 +24,11 @@ function WelcomeScreen({ navigation }) {
           style={styles.logo}
           source={require("../assets/favicon.png")}
         ></Image>
-        <Text style={styles.logoText}>This is my awsome new app</Text>
+        <Text style={styles.logoText}>
+          This is my first go at React Native. I have decided to put of my
+          project and a breif description as content so I can familiarise my
+          self with the syntax{" "}
+        </Text>
       </View>
       <View style={styles.btnContainer}>
         <View style={styles.btn}>
@@ -70,6 +74,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: "white",
     fontWeight: "bold",
+    margin: 20,
   },
   logoContainer: {
     position: "absolute",

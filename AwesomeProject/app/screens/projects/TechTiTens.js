@@ -3,13 +3,19 @@ import { ImageBackground, Text, StyleSheet, View, Image } from "react-native";
 
 function TechTiTens(props) {
   return (
-    <ImageBackground style={styles.background}>
-      <View style={styles.projectImgContainer}>
+    <ImageBackground
+      source={require("../../assets/Screenshot 2024-02-14 at 16.49.36.png")}
+      style={styles.background}
+    >
+      <ImageBackground
+        source={require("../../assets/Screenshot 2024-02-14 at 16.49.36.png")}
+        style={styles.projectImgContainer}
+      >
         <Image
           source={require("../../assets/background.jpg")}
           style={styles.projectImg}
         ></Image>
-      </View>
+      </ImageBackground>
       <View style={styles.pageBody}>
         <Text style={styles.descriptionText}>
           Harvest Hub my awsome 4 week project that was worked on in a team of
@@ -53,8 +59,9 @@ const styles = StyleSheet.create({
   },
 
   descriptionText: {
+    color: "white",
     fontSize: 20,
-    color: "black",
+    color: "white",
     fontWeight: "bold",
     margin: 20,
   },

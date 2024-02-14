@@ -24,7 +24,7 @@ function HomePage({ navigation }) {
 
   return (
     <ImageBackground
-      source={require("../assets/background.jpg")}
+      source={require("../assets/Screenshot 2024-02-14 at 16.49.36.png")}
       style={styles.background}
     >
       <ScrollView
@@ -36,7 +36,7 @@ function HomePage({ navigation }) {
       >
         <View style={styles.projectContainer}>
           <ImageBackground
-            source={require("../assets/background.jpg")}
+            source={require("../assets/Cream-logo.png")}
             style={styles.projectImg}
           ></ImageBackground>
           <View style={styles.project}>
@@ -46,7 +46,7 @@ function HomePage({ navigation }) {
 
         <View style={styles.projectContainer}>
           <ImageBackground
-            source={require("../assets/background.jpg")}
+            source={require("../assets/Screenshot 2024-02-14 at 16.42.20.png")}
             style={styles.projectImg}
           ></ImageBackground>
           <View style={styles.project}>
@@ -56,7 +56,7 @@ function HomePage({ navigation }) {
 
         <View style={styles.projectContainer}>
           <ImageBackground
-            source={require("../assets/background.jpg")}
+            source={require("../assets/Screenshot 2024-02-14 at 16.30.04.png")}
             style={styles.projectImg}
           ></ImageBackground>
           <View style={styles.project}>
@@ -95,20 +95,23 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     backgroundColor: "white",
     marginBottom: 20,
-    opacity: 0.8,
+    opacity: 0.9,
     justifyContent: "flex-end",
   },
 
   project: {
     flex: 0.25,
-    backgroundColor: "red",
-    borderBottomLeftRadius: 25,
-    borderBottomRightRadius: 25,
+    backgroundColor: "white",
+    borderRadius: 25,
     justifyContent: "center",
     alignItems: "center",
   },
 
   projectImg: {
-    flex: 0.8,
+    flex: 1,
+    overflow: "hidden",
+    borderTopRightRadius: 25,
+    borderTopLeftRadius: 25,
+    resizeMode: "contain",
   },
 });

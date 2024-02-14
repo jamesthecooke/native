@@ -5,7 +5,7 @@ import { Text } from "react-native";
 function HomePage(props) {
   return (
     <ImageBackground
-      source={require("../assets/background.jpg")}
+      source={require("../assets/Screenshot 2024-02-14 at 16.49.36.png")}
       style={styles.background}
     >
       <View style={styles.headingContainer}>
