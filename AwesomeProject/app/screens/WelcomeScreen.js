@@ -26,8 +26,8 @@ function WelcomeScreen({ navigation }) {
         ></Image>
         <Text style={styles.logoText}>
           This is my first go at React Native. I have decided to put of my
-          project and a breif description as content so I can familiarise my
-          self with the syntax{" "}
+          project and a breif description as content so I can familiarise myself
+          with the syntax{" "}
         </Text>
       </View>
       <View style={styles.btnContainer}>
