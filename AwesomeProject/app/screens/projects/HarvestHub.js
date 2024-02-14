@@ -12,15 +12,15 @@ function HarvestHub(props) {
         style={styles.projectImgContainer}
       >
         <Image
-          source={require("../../assets/background.jpg")}
+          source={require("../../assets/Cream-logo.png")}
           style={styles.projectImg}
         ></Image>
       </ImageBackground>
       <View style={styles.pageBody}>
         <Text style={styles.descriptionText}>
-          Harvest Hub my awsome 4 week project that was worked on in a team of
-          6. this is place holder text and will be much mich better formatted
-          than this teheeh
+          Harvest Hub was a team project that I worked on with 5 others. We
+          built a website for people to learn about growing veggies. They could
+          add tips and tricks share their learnigs.
         </Text>
       </View>
     </ImageBackground>
