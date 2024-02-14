@@ -28,19 +28,16 @@ const styles = StyleSheet.create({
 
   headingContainer: {
     position: "absolute",
-    top: "50%",
+    top: "25%",
     alignItems: "center",
     flexDirection: "row",
-    // width: "80%",
-    backgroundColor: "black",
-    opacity: 0.7,
-    borderRadius: 15,
-    left: "3%",
   },
 
   pageHeading: {
+    color: "white",
     fontSize: 20,
     color: "white",
     fontWeight: "bold",
+    margin: 20,
   },
 });
