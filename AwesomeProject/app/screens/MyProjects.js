@@ -63,16 +63,6 @@ function HomePage({ navigation }) {
             <Button title="TechTiTens" color="black" onPress={TechTiTens} />
           </View>
         </View>
-
-        <View style={styles.projectContainer}>
-          <ImageBackground
-            source={require("../assets/background.jpg")}
-            style={styles.projectImg}
-          ></ImageBackground>
-          <View style={styles.project}>
-            <Text stle={styles.projectText}>Project 4</Text>
-          </View>
-        </View>
       </ScrollView>
     </ImageBackground>
   );
