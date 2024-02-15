@@ -12,7 +12,7 @@ function Pong(props) {
         style={styles.projectImgContainer}
       >
         <Image
-          source={require("../../assets/background.jpg")}
+          source={require("../../assets/Screenshot 2024-02-14 at 16.42.20.png")}
           style={styles.projectImg}
         ></Image>
       </ImageBackground>
