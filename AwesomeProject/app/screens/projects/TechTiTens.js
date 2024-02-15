@@ -18,9 +18,10 @@ function TechTiTens(props) {
       </ImageBackground>
       <View style={styles.pageBody}>
         <Text style={styles.descriptionText}>
-          Harvest Hub my awsome 4 week project that was worked on in a team of
-          6. this is place holder text and will be much mich better formatted
-          than this teheeh
+          Tech TiTens is a project that I developed with a team of 5 other
+          students. We were trying to build a platform that would help students
+          to revise topics they are struggling with whilst on the go. We used
+          our combined knowledge to achive this.
         </Text>
       </View>
     </ImageBackground>
